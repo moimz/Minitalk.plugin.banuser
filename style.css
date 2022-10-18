@@ -1,0 +1,23 @@
+/**
+ * 이 파일은 미니톡 유저차단 플러그인의 일부입니다. (https://www.minitalk.io)
+ *
+ * 유저차단과 관련된 미니톡 UI 추가 스타일시트
+ * 
+ * @file /plugins/banuser/script.js
+ * @author Arzz (arzz@arzz.com)
+ * @license MIT License
+ * @version 1.0.0
+ * @modified 2022. 10. 7.
+ */
+@import url("../../styles/fonts/XEIcon.css");
+
+// 유저닉네임에 차단아이콘 추가
+label[data-role=user] i.banned {vertical-align:middle; padding-left:5px; color:#F44336; font-family:XEIcon; font-style:normal;}
+label[data-role=user] i.banned::before {content:"\e60a";}
+
+// 환경설정탭에 차단유저 관리 추가
+section[data-section=configs] div[data-role=content] div.banusers-help {background:#FFF9C4; font-size:12px; color:#222; padding:8px; line-height:1.6; margin-bottom:5px;}
+section[data-section=configs] div[data-role=content] div.banusers-empty {background:#f4f4f4; font-size:12px; color:#666; padding:8px; line-height:1.6; margin-top:5px; height:50px; line-height:50px; text-align:center;}
+section[data-section=configs] div[data-role=content] div.banuser {font-size:0; margin:2px 0px;}
+section[data-section=configs] div[data-role=content] div.banuser > span {display:inline-block; width:calc(100% - 30px); height:24px; line-height:24px; vertical-align:middle; font-size:12px; color:#222;}
+section[data-section=configs] div[data-role=content] div.banuser > button {cursor:pointer; width:20px; height:20px; background:#F44336; color:#fff; vertical-align:middle; margin:2px 0px 2px 6px; font-size:12px; border:0; border-radius:3px;}
