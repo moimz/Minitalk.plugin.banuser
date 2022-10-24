@@ -7,15 +7,13 @@
  * @author Arzz (arzz@arzz.com)
  * @license MIT License
  * @version 1.0.0
- * @modified 2022. 10. 7.
+ * @modified 2022. 10. 24.
  */
 @import url("../../styles/fonts/XEIcon.css");
 
-// 유저닉네임에 차단아이콘 추가
 label[data-role=user] i.banned {vertical-align:middle; padding-left:5px; color:#F44336; font-family:XEIcon; font-style:normal;}
 label[data-role=user] i.banned::before {content:"\e60a";}
 
-// 환경설정탭에 차단유저 관리 추가
 section[data-section=configs] div[data-role=content] div.banusers-help {background:#FFF9C4; font-size:12px; color:#222; padding:8px; line-height:1.6; margin-bottom:5px;}
 section[data-section=configs] div[data-role=content] div.banusers-empty {background:#f4f4f4; font-size:12px; color:#666; padding:8px; line-height:1.6; margin-top:5px; height:50px; line-height:50px; text-align:center;}
 section[data-section=configs] div[data-role=content] div.banuser {font-size:0; margin:2px 0px;}
