@@ -6,7 +6,7 @@
  * @file /plugins/banuser/script.js
  * @author Arzz (arzz@arzz.com)
  * @license MIT License
- * @version 1.0.0
+ * @version 1.0.1
  * @modified 2022. 10. 7.
  */
 if (Minitalk === undefined) return;
